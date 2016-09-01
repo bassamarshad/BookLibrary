@@ -3,7 +3,7 @@ Android - Database App for a Library
 #
 Features :-
 #
-1)Add or Insert a Record
+1) Add or Insert a Record into the DB
 #
 2) Delete a record from the DB
 #
