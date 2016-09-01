@@ -1,0 +1,60 @@
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.booklibrary.DatabaseActivity" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Query Book based on Book Genre"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Book Genre" />
+
+            <EditText
+                android:id="@+id/editTextbk1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </EditText>
+              
+        </LinearLayout>
+        
+        
+        <Button
+            android:id="@+id/btn_quer_on_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="queryonBookGenre"
+            android:text="Query" />
+
+        <Button
+            android:id="@+id/btn_gobck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goBack"
+            android:text="@string/button_go_bck" />
+
+        <ListView
+            android:id="@+id/listView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+    </LinearLayout>
+

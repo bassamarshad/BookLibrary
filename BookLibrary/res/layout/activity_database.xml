@@ -1,0 +1,100 @@
+ <ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.booklibrary.DatabaseActivity" >
+
+<LinearLayout 
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+     >
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_activity2"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+        
+        
+
+    <Button
+        android:id="@+id/btn_add_records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doInsert"
+        android:text="@string/button2" />
+
+    <Button
+        android:id="@+id/btn_delete_records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doDelete"
+        android:text="@string/button3" />
+    
+     <Button
+        android:id="@+id/btn_update_records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doUpdate"
+        android:text="@string/button4" />
+     
+        <Button
+        android:id="@+id/btn_query_on_yearpub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doQueryonYearPub"
+        android:text="@string/button5" />
+   
+        <Button
+        android:id="@+id/btn_query_on_yearrange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doQueryonYearRange"
+        android:text="@string/button6" />
+        
+        <Button
+        android:id="@+id/btn_query_on_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doQueryonGenre"
+        android:text="@string/button7" />
+        
+          <Button
+        android:id="@+id/btn_query_on_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doQueryonAuthor"
+        android:text="@string/button8" />
+          
+          <Button
+        android:id="@+id/btn_query_on_publisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doQueryonPublisher"
+        android:text="@string/button9" />
+          
+          <Button
+        android:id="@+id/btn_query_on_price_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doQueryonPriceRange"
+        android:text="@string/button10" />
+
+ 
+        
+        
+ 
+
+</LinearLayout>
+
+   </ScrollView>

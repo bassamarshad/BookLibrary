@@ -1,0 +1,64 @@
+ <ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.booklibrary.DatabaseActivity" >
+
+<LinearLayout 
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+     >
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_delete_main"
+        android:gravity="center"
+        android:textSize="22sp" />
+        
+        
+
+    <Button
+        android:id="@+id/btn_based_on_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openDelOnName"
+        android:text="@string/button_on_name" />
+    
+     <Button
+        android:id="@+id/btn_based_on_isbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openDelOnIsbn"
+        android:text="@string/button_on_isbn" />
+     
+      <Button
+        android:id="@+id/btn_based_on_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openDelOnTitle"
+        android:text="@string/button_on_title" />
+
+      <Button
+        android:id="@+id/btn_gobck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goBack"
+        android:text="@string/button_go_bck" />
+
+ 
+        
+        
+ 
+
+</LinearLayout>
+
+   </ScrollView>
